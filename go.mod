@@ -1,3 +1,3 @@
-module github.com/elastic/go-elasticsearch/v8
+module github.com/frikky/go-elasticsearch
 
-go 1.11
+go 1.15

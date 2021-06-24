@@ -35,7 +35,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/elastic/go-elasticsearch/v8/internal/version"
+	"github.com/frikky/go-elasticsearch/v8/internal/version"
 )
 
 const (

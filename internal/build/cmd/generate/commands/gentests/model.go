@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/elastic/go-elasticsearch/v8/internal/build/utils"
+	"github.com/frikky/go-elasticsearch/v8/internal/build/utils"
 )
 
 var reFilename = regexp.MustCompile(`\d*_?(.+)\.ya?ml`)

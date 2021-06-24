@@ -22,7 +22,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/elastic/go-elasticsearch/v8/internal/build/utils"
+	"github.com/frikky/go-elasticsearch/v8/internal/build/utils"
 )
 
 var rootCmd = &cobra.Command{
