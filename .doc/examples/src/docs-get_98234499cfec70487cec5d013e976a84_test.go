@@ -24,7 +24,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/elastic/go-elasticsearch/v8"
+	"github.com/frikky/go-elasticsearch/v8"
 )
 
 var (
