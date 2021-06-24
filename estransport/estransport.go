@@ -47,10 +47,10 @@ const (
 )
 
 var (
-	userAgent   string
-	metaHeader  string
+	userAgent           string
+	metaHeader          string
 	compatibilityHeader bool
-	reGoVersion = regexp.MustCompile(`go(\d+\.\d+\..+)`)
+	reGoVersion         = regexp.MustCompile(`go(\d+\.\d+\..+)`)
 
 	defaultMaxRetries    = 3
 	defaultRetryOnStatus = [...]int{502, 503, 504}
@@ -147,7 +147,7 @@ func New(cfg Config) (*Client, error) {
 			return nil, fmt.Errorf("unable to set CA certificate for transport of type %T", cfg.Transport)
 		}
 
-		httpTransport = httpTransport.Clone()
+		//httpTransport = httpTransport.Clone()
 		httpTransport.TLSClientConfig.RootCAs = x509.NewCertPool()
 
 		if ok := httpTransport.TLSClientConfig.RootCAs.AppendCertsFromPEM(cfg.CACert); !ok {
